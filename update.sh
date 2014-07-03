@@ -2,9 +2,9 @@
 # Update dotfiles and submodules
 cd ~/dotfiles
 git pull
-git submodule sync --recursive
-git submodule update --recursive --init
-git submodule foreach --recursive git clean -df
+git submodule foreach git clean -df
+git submodule update --init --remote
+git submodule foreach git checkout master
 # Janus update
 cd ~/dotfiles/vim
 rake
