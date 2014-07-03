@@ -1,0 +1,11 @@
+[user]
+	email = millson249@gmail.com
+	name = Miles Simpson
+[core]
+	editor = vim
+[merge]
+	tool = vimdiff
+[push]
+	default = simple
+[color]
+	ui = auto
