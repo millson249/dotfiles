@@ -13,47 +13,31 @@ files="gitconfig vimrc vim zshrc oh-my-zsh vimrc.before vimrc.after"    # list o
 ##########
 
 # create dotfiles_old in homedir
-echo -n "Creating $olddir for backup of any existing dotfiles in ~ ..."
+echo -n "Creating $olddir to backup existing dotfiles in ~ ..."
 mkdir -p $olddir
-echo "done"
+echo "Done"
 
 # change to the dotfiles directory
 echo -n "Changing to the $dir directory ..."
 cd $dir
-echo "done"
+echo "Done"
 
 # move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks from the homedir to any files in the ~/dotfiles directory specified in $files
+echo "Moving existing dotfiles from ~ to $olddir"
 for file in $files; do
-    echo "Moving any existing dotfiles from ~ to $olddir"
-    mv ~/.$file ~/dotfiles_old/
+    if [ -e ~/.$file ]; then
+      mv -v ~/.$file ~/dotfiles_old/
+    fi
     echo "Creating symlink to $file in home directory."
-    ln -s $dir/$file ~/.$file
+    ln -sv $dir/$file ~/.$file
 done
 
-function install_zsh {
-# Test to see if zshell is installed.  If it is:
-if [ -f /bin/zsh -o -f /usr/bin/zsh ]; then
-    # Clone oh-my-zsh repository from GitHub only if it isn't already present
-    if [[ ! -d $dir/oh-my-zsh/ ]]; then
-        git clone https://github.com/robbyrussell/oh-my-zsh.git 
-    fi
-    # Set the default shell to zsh if it isn't currently set to zsh
-    if [[ ! $(echo $SHELL) == $(which zsh) ]]; then
-        chsh -s $(which zsh)
-    fi
+# Test to see if zsh is installed.  If it is, set as default shell if not already set.
+echo "Setting zsh as default shell..."
+shellpath=$(command -v zsh)
+if [ $shellpath ]; then
+  chsh -s $shellpath
+  echo "Done!"
 else
-    # If zsh isn't installed, get the platform of the current machine
-    platform=$(uname);
-    # If the platform is Linux, try an apt-get to install zsh and then recurse
-    if [[ $platform == 'Linux' ]]; then
-        sudo apt-get install zsh
-        install_zsh
-    # If the platform is OS X, tell the user to install zsh :)
-    elif [[ $platform == 'Darwin' ]]; then
-        echo "Please install zsh, then re-run this script!"
-        exit
-    fi
+  echo "Error: zsh is not installed!"
 fi
-}
-
-install_zsh
