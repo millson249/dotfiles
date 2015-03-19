@@ -51,7 +51,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH=$PATH
+export PATH=$HOME/Android/android-sdk-linux/tools:$HOME/Android/android-sdk-linux/platform-tools:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
 export EDITOR='vim'
