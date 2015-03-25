@@ -56,6 +56,8 @@ export PATH=$HOME/Android/android-sdk-linux/tools:$HOME/Android/android-sdk-linu
 
 export EDITOR='vim'
 
+export STEAM_FRAME_FORCE_CLOSE=1
+
 zstyle :omz:plugins:ssh-agent identities id_rsa id_ecdsa
 
 # You may need to manually set your language environment
