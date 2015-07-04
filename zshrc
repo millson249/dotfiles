@@ -52,11 +52,6 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 export PATH=$HOME/Android/android-sdk-linux/tools:$HOME/Android/android-sdk-linux/platform-tools:$PATH
-# export MANPATH="/usr/local/man:$MANPATH"
-
-export EDITOR='vim'
-
-export STEAM_FRAME_FORCE_CLOSE=1
 
 zstyle :omz:plugins:ssh-agent identities id_rsa id_ecdsa
 
