@@ -1,0 +1,11 @@
+#!/bin/sh
+
+if [ $(hostname) == "desktop" ]; then
+  ckb --background &
+fi
+
+if [ $(hostname) == "laptop" ]; then
+  nm-applet &
+fi
+
+xbindkeys &

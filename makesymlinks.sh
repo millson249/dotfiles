@@ -9,7 +9,7 @@
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old/$(date +%F_%H%M%S)  # old dotfiles backup directory
 files="gitconfig vimrc vim zshrc oh-my-zsh vimrc.before vimrc.after profile"    # list of files/folders to symlink in homedir
-xfiles=""
+xfiles="Xresources xinitrc xprofile"
 
 ##########
 
@@ -54,6 +54,7 @@ done
 
 if [ "$LINKXFILES"  = true ]; then
   echo ""
+  echo "Processing X files..."
   for file in $xfiles; do
     if [ -e ~/.$file ]; then
       echo "Moving .$file ..."
