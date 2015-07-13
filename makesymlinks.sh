@@ -67,11 +67,16 @@ fi
 echo ""
 
 # Test to see if zsh is installed.  If it is, set as default shell if not already set.
-echo "Setting zsh as default shell..."
+echo "Attempting to set zsh as the default shell..."
 shellpath=$(command -v zsh)
-if [ $shellpath ]; then
-  chsh -s $shellpath
-  echo "Done!"
+if [ $SHELL = $shellpath ]; then
+  echo "Shell already set to zsh!"
 else
-  echo "Error: zsh is not installed!"
+  if [ $shellpath ]; then
+    chsh -s $shellpath
+    echo "Done!"
+  else
+    echo "Error: zsh is not installed!"
+  fi
 fi
+
