@@ -4,33 +4,66 @@
 # This script creates symlinks from the home directory to any desired dotfiles in ~/dotfiles
 ############################
 
-########## Variables
+########## Default Variables
 
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old/$(date +%F_%H%M%S)  # old dotfiles backup directory
 files="gitconfig vimrc vim zshrc oh-my-zsh vimrc.before vimrc.after profile"    # list of files/folders to symlink in homedir
+xfiles=""
 
 ##########
 
+########## Parse arguements
+
+while [[ $# > 0 ]]
+do
+  key="$1"
+
+  case $key in
+    -X)
+      LINKXFILES=true
+      shift
+      ;;
+  esac
+  shift
+done
+##########
+
 # create dotfiles_old in homedir
-echo -n "Creating $olddir to backup existing dotfiles in ~ ..."
+echo -n "Creating $olddir to backup existing dotfiles in ~..."
 mkdir -p $olddir
 echo "Done"
+echo ""
 
 # change to the dotfiles directory
-echo -n "Changing to the $dir directory ..."
+echo -n "Changing to the $dir directory..."
 cd $dir
 echo "Done"
+echo ""
 
 # move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks from the homedir to any files in the ~/dotfiles directory specified in $files
-echo "Moving existing dotfiles from ~ to $olddir"
+echo "Moving existing dotfiles from ~ to $olddir and creating symlinks..."
 for file in $files; do
+  if [ -e ~/.$file ]; then
+    echo "Moving .$file ..."
+    mv -v ~/.$file $olddir
+  fi
+  echo "Creating symlink to $file ..."
+  ln -sv $dir/$file ~/.$file
+done
+
+if [ "$LINKXFILES"  = true ]; then
+  echo ""
+  for file in $xfiles; do
     if [ -e ~/.$file ]; then
+      echo "Moving .$file ..."
       mv -v ~/.$file $olddir
     fi
-    echo "Creating symlink to $file in home directory."
+    echo "Creating symlink to $file ..."
     ln -sv $dir/$file ~/.$file
-done
+  done
+fi
+echo ""
 
 # Test to see if zsh is installed.  If it is, set as default shell if not already set.
 echo "Setting zsh as default shell..."
