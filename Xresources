@@ -70,8 +70,8 @@ Xft.rgba:                       rgb
 Xft.hinting:                    true
 Xft.hintstyle:                  hintslight
 
-URxvt*font:                     xft:Monospace:pixelsize=10
-URxvt*boldFont:                 xft:Monospace:style=Bold:pixelsize=10
+URxvt*font:                     xft:Monospace:pixelsize=11
+URxvt*boldFont:                 xft:Monospace:style=Bold:pixelsize=11
 !URxvt*background:               black
 !URxvt*foreground:               green
 !URxvt*cursorColor:              green
