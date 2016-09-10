@@ -2,6 +2,7 @@
 
 if [ $(hostname) == "desktop" ]; then
   ckb --background &
+  xrandr --dpi 96x96 &
 fi
 
 if [ $(hostname) == "laptop" ]; then
@@ -9,3 +10,4 @@ if [ $(hostname) == "laptop" ]; then
 fi
 
 xbindkeys &
+steam -silent &
