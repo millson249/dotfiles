@@ -51,7 +51,8 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH=$HOME/Android/android-sdk-linux/tools:$HOME/Android/android-sdk-linux/platform-tools:$PATH
+source $HOME/.profile
+export PATH=$HOME/Android/android-studio/bin:$PATH
 
 zstyle :omz:plugins:ssh-agent identities id_rsa id_ecdsa
 
