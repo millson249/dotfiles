@@ -10,4 +10,4 @@ if [ $(hostname) == "laptop" ]; then
 fi
 
 xbindkeys &
-steam -silent &
+steam-native -silent &
