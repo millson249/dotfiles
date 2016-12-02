@@ -72,4 +72,3 @@ URxvt*buffered:                 true
 URxvt*perl-ext-common:          default,tabbed,matcher
 URxvt*url-launcher:             /usr/bin/chromium
 URxvt*matcher.button:           1
-URxvt*termName:                 rxvt-256color
