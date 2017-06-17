@@ -6,3 +6,6 @@
 	path = vim
 	url = https://github.com/carlhuda/janus.git
 	branch = master
+[submodule "janus/rust-lang"]
+	path = janus/rust-lang
+	url = https://github.com/rust-lang/rust.vim.git
