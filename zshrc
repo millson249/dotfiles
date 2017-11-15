@@ -52,7 +52,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 source $HOME/.profile
-export PATH=$HOME/Android/android-studio/bin:$PATH
+export PATH=$HOME/.cargo/bin:$PATH
 
 zstyle :omz:plugins:ssh-agent identities id_rsa id_ecdsa
 

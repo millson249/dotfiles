@@ -1,5 +1,5 @@
 [user]
-	email = millson249@gmail.com
+	email = miles.a.simpson@gmail.com
 	name = Miles Simpson
 [core]
 	editor = vim
@@ -9,3 +9,5 @@
 	default = simple
 [color]
 	ui = auto
+[http "https://gopkg.in"]
+	followRedirects = true
