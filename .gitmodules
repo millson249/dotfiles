@@ -9,3 +9,6 @@
 [submodule "janus/rust-lang"]
 	path = janus/rust-lang
 	url = https://github.com/rust-lang/rust.vim.git
+[submodule "janus/verilog_systemverilog.vim"]
+	path = janus/verilog_systemverilog.vim
+	url = https://github.com/vhda/verilog_systemverilog.vim.git
