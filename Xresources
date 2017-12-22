@@ -66,8 +66,8 @@ Xft.rgba:                       rgb
 Xft.hinting:                    true
 Xft.hintstyle:                  hintslight
 
-URxvt*font:                     xft:Monospace:pixelsize=11
-URxvt*boldFont:                 xft:Monospace:style=Bold:pixelsize=11
+URxvt*font:                     xft:Monospace:pixelsize=14
+URxvt*boldFont:                 xft:Monospace:style=Bold:pixelsize=14
 URxvt*buffered:                 true
 URxvt*perl-ext-common:          default,tabbed,matcher
 URxvt*url-launcher:             /usr/bin/chromium
