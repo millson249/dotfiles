@@ -1,8 +1,8 @@
 #!/bin/sh
 
 if [ $(hostname) == "desktop" ]; then
-  ckb --background &
   xrandr --dpi 96x96 &
+  ckb-next --background &
 fi
 
 if [ $(hostname) == "laptop" ]; then
@@ -10,4 +10,5 @@ if [ $(hostname) == "laptop" ]; then
 fi
 
 xbindkeys &
+xxkb &
 steam-native -silent &
