@@ -8,7 +8,7 @@
 
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old/$(date +%F_%H%M%S)  # old dotfiles backup directory
-files="gitconfig vimrc vim janus zshrc oh-my-zsh vimrc.before vimrc.after profile inputrc"    # list of files/folders to symlink in homedir
+files="gitconfig vimrc vim janus zshrc oh-my-zsh vimrc.before vimrc.after profile inputrc tmux.conf"    # list of files/folders to symlink in homedir
 xfiles="Xresources xinitrc xprofile"
 
 ##########
