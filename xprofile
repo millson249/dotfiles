@@ -11,4 +11,5 @@ fi
 
 xbindkeys &
 xxkb &
+~/.fehbg &
 steam-native -silent &
