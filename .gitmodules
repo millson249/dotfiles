@@ -15,3 +15,6 @@
 [submodule "janus/DoxygenToolkit.vim"]
 	path = janus/DoxygenToolkit.vim
 	url = https://github.com/vim-scripts/DoxygenToolkit.vim.git
+[submodule "janus/c.vim"]
+	path = janus/c.vim
+	url = https://github.com/vim-scripts/c.vim.git
