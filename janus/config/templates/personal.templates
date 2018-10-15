@@ -3,7 +3,7 @@
 § =============================================================
 
 SetMacro( 'AUTHOR',       'Miles Simpson' )
-SetMacro( 'AUTHORREF',    '' )
+SetMacro( 'AUTHORREF',    'heliochronix' )
 SetMacro( 'EMAIL',        'miles.a.simpson@gmail.com' )
 SetMacro( 'ORGANIZATION', '' )
 SetMacro( 'COMPANY',      '' )
