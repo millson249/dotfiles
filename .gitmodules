@@ -12,6 +12,3 @@
 [submodule "janus/verilog_systemverilog.vim"]
 	path = janus/verilog_systemverilog.vim
 	url = https://github.com/vhda/verilog_systemverilog.vim.git
-[submodule "janus/c-support"]
-	path = janus/c-support
-	url = git@github.com:heliochronix/c-support.git
