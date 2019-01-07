@@ -76,6 +76,7 @@ source $HOME/.profile
 export PATH=$HOME/.cargo/bin:$PATH
 
 zstyle :omz:plugins:ssh-agent identities id_rsa id_ecdsa
+zstyle :omz:plugins:ssh-agent agent-forwarding on
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
