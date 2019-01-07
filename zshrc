@@ -67,7 +67,7 @@ plugins=(
   ssh-agent
 )
 
-zstyle :omz:plugins:ssh-agent identities id_rsa id_ecdsa
+#zstyle :omz:plugins:ssh-agent identities id_rsa id_ecdsa
 zstyle :omz:plugins:ssh-agent agent-forwarding on
 
 source $ZSH/oh-my-zsh.sh
