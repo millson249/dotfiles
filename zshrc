@@ -67,6 +67,9 @@ plugins=(
   ssh-agent
 )
 
+zstyle :omz:plugins:ssh-agent identities id_rsa id_ecdsa
+zstyle :omz:plugins:ssh-agent agent-forwarding on
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -74,9 +77,6 @@ source $ZSH/oh-my-zsh.sh
 # export MANPATH="/usr/local/man:$MANPATH"
 source $HOME/.profile
 export PATH=$HOME/.cargo/bin:$PATH
-
-zstyle :omz:plugins:ssh-agent identities id_rsa id_ecdsa
-zstyle :omz:plugins:ssh-agent agent-forwarding on
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
