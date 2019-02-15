@@ -49,7 +49,7 @@ for file in $files; do
     mv -v ~/.$file $olddir
   fi
   echo "Creating symlink to $file ..."
-  ln -sv $dir/$file ~/.$file
+  ln -sfv $dir/$file ~/.$file
 done
 
 if [ "$LINKXFILES"  = true ]; then
@@ -61,7 +61,7 @@ if [ "$LINKXFILES"  = true ]; then
       mv -v ~/.$file $olddir
     fi
     echo "Creating symlink to $file ..."
-    ln -sv $dir/$file ~/.$file
+    ln -sfv $dir/$file ~/.$file
   done
 fi
 echo ""
