@@ -55,11 +55,11 @@
 ! Custom Color Settings
 ! special
 *.foreground:   #84C138
-*.background:   #151515
+*.background:   #121212
 *.cursorColor:  #84C138
 ! black
 *.color0:       #000000
-*.color8:       #666666
+*.color8:       #626262
 ! red
 *.color1:       #B6214A
 *.color9:       #E50000
@@ -71,7 +71,7 @@
 *.color11:      #E5E500
 ! blue
 *.color4:       #246Eb2
-*.color12:      #0000FF
+*.color12:      #005FFF
 ! magenta
 *.color5:       #B200B2
 *.color13:      #E500E5
@@ -90,6 +90,6 @@ Xft.hintstyle:                  hintslight
 URxvt*font:                     xft:Hack:pixelsize=14
 URxvt*boldFont:                 xft:Hack:style=Bold:pixelsize=14
 URxvt*buffered:                 true
-URxvt*perl-ext-common:          default,tabbed,matcher
+URxvt*perl-ext-common:          default,matcher
 URxvt*url-launcher:             /usr/bin/chromium
 URxvt*matcher.button:           1
