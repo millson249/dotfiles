@@ -9,6 +9,21 @@ export ZSH=$HOME/.oh-my-zsh
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="spaceship-prompt/spaceship"
 
+# Prompt options
+SPACESHIP_PROMPT_ORDER=( time user host dir git hg package node ruby elm elixir xcode swift golang php rust haskell julia docker aws venv conda pyenv dotnet ember kubecontext terraform exec_time line_sep battery vi_mode jobs exit_code char )
+SPACESHIP_PROMPT_ADD_NEWLINE=false
+
+SPACESHIP_USER_SHOW=always
+SPACESHIP_USER_SUFFIX=""
+SPACESHIP_USER_COLOR=034
+
+SPACESHIP_HOST_SHOW=always
+SPACESHIP_HOST_PREFIX="@"
+SPACESHIP_HOST_SUFFIX=""
+SPACESHIP_HOST_COLOR=057
+
+SPACESHIP_DIR_PREFIX=":"
+
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
 # cause zsh load theme from this variable instead of
