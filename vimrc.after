@@ -1,5 +1,5 @@
 set tabstop=4
 set shiftwidth=4
-color solarized
+color onedark
 
 set tags=tags,./tags;$HOME

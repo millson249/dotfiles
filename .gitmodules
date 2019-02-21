@@ -12,3 +12,9 @@
 [submodule "janus/verilog_systemverilog.vim"]
 	path = janus/verilog_systemverilog.vim
 	url = https://github.com/vhda/verilog_systemverilog.vim.git
+[submodule "omz/themes/spaceship-prompt"]
+	path = omz/themes/spaceship-prompt
+	url = https://github.com/denysdovhan/spaceship-prompt.git
+[submodule "janus/onedark.vim"]
+	path = janus/onedark.vim
+	url = https://github.com/joshdick/onedark.vim.git

@@ -7,7 +7,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="kphoen"
+ZSH_THEME="spaceship-prompt/spaceship"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -55,7 +55,7 @@ DISABLE_AUTO_UPDATE="true"
 # HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
+ZSH_CUSTOM=$HOME/.omz
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -76,7 +76,6 @@ source $ZSH/oh-my-zsh.sh
 
 # export MANPATH="/usr/local/man:$MANPATH"
 source $HOME/.profile
-export PATH=$HOME/.cargo/bin:$PATH
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
