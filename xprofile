@@ -1,11 +1,11 @@
 #!/bin/sh
 
-if [ $(hostname) == "desktop" ]; then
+if [ $(hostname) == "node01" ]; then
   xrandr --dpi 96x96 &
   ckb-next --background &
 fi
 
-if [ $(hostname) == "laptop" ]; then
+if [ $(hostname) == "node02" ]; then
   nm-applet &
 fi
 
