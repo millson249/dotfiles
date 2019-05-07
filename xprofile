@@ -1,8 +1,6 @@
 #!/bin/sh
 
 if [ $(hostname) == "node01" ]; then
-  xrandr --dpi 96x96 &
-  ckb-next --background &
 fi
 
 if [ $(hostname) == "node02" ]; then
@@ -10,6 +8,5 @@ if [ $(hostname) == "node02" ]; then
 fi
 
 xbindkeys &
-xxkb &
 ~/.fehbg &
 #steam-native -silent &
