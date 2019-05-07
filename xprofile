@@ -1,7 +1,7 @@
 #!/bin/sh
 
-if [ $(hostname) == "node01" ]; then
-fi
+#if [ $(hostname) == "node01" ]; then
+#fi
 
 if [ $(hostname) == "node02" ]; then
   nm-applet &
