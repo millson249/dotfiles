@@ -1,12 +1,13 @@
 #!/bin/sh
 
-#if [ $(hostname) == "node01" ]; then
-#fi
-
-if [ $(hostname) == "node02" ]; then
-  nm-applet &
+if [ $(hostname) == "node01" ]; then
+  ckb-next -b&
 fi
 
+#if [ $(hostname) == "node02" ]; then
+#fi
+
+nm-applet &
 xbindkeys &
 ~/.fehbg &
 #steam-native -silent &
