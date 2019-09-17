@@ -71,6 +71,9 @@ bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 bindsym Print exec gnome-screenshot -i
 bindsym $mod+Print exec gnome-screenshot -w
 
+bindsym $mod+t exec ~/.config/i3/title.sh
+bindsym $mod+Shift+t exec ~/.config/i3/title.sh parent
+
 # change focus
 bindsym $mod+$left focus left
 bindsym $mod+$down focus down
