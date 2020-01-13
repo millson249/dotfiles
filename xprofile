@@ -10,4 +10,5 @@ fi
 nm-applet &
 xbindkeys &
 ~/.fehbg &
+picom &
 #steam-native -silent &
