@@ -10,7 +10,7 @@ export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="spaceship-prompt/spaceship"
 
 # Prompt options
-SPACESHIP_PROMPT_ORDER=( time user host dir git hg package node ruby elm elixir xcode swift golang php rust haskell julia docker aws venv conda pyenv dotnet ember kubecontext terraform exec_time line_sep battery vi_mode jobs exit_code char )
+SPACESHIP_PROMPT_ORDER=( time user host dir git hg package node ruby elixir xcode swift golang php rust haskell julia docker aws venv conda pyenv dotnet ember kubectl terraform exec_time line_sep battery vi_mode jobs exit_code char )
 SPACESHIP_PROMPT_ADD_NEWLINE=false
 
 SPACESHIP_USER_SHOW=always
