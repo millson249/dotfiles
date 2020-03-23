@@ -8,6 +8,6 @@ set shiftwidth=4
 set cino=:0,t0,l1
 
 set background=dark
-color solarized
+"color solazized
 
 set tags=tags,./tags;$HOME
