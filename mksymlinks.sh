@@ -9,7 +9,7 @@
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old/$(date +%F_%H%M%S)  # old dotfiles backup directory
 files="gitconfig vimrc vim janus zshrc oh-my-zsh omz vimrc.before vimrc.after profile inputrc tmux.conf scripts"    # list of files/folders to symlink in homedir
-xfiles="Xresources xinitrc xprofile config/i3 config/picom"
+xfiles="Xresources xinitrc xprofile config/i3 config/picom config/alacritty"
 
 ##########
 
