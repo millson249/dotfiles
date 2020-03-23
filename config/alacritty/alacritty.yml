@@ -159,7 +159,7 @@ font:
 draw_bold_text_with_bright_colors: false
 
 schemes:
-  solarized_light: &light
+  solarized_light: &solarized_light
     # Default colors
     primary:
       background: '#fdf6e3' # base3
@@ -191,7 +191,8 @@ schemes:
       magenta: '#6c71c4' # violet
       cyan:    '#93a1a1' # base1
       white:   '#fdf6e3' # base3
-  solarized_dark: &dark
+
+  solarized_dark: &solarized_dark
     # Default colors
     primary:
       background: '#002b36' # base03
@@ -224,8 +225,36 @@ schemes:
       cyan:    '#93a1a1' # base1
       white:   '#fdf6e3' # base3
 
+  matrix: &matrix
+    # Default colors
+    primary:
+      background: '#000000'
+      foreground: '#00cc00'
+
+    # Normal colors
+    normal:
+      black:   '#000000'
+      red:     '#55ff55'
+      green:   '#00cc00'
+      yellow:  '#00cc00'
+      blue:    '#005500'
+      magenta: '#55ff55'
+      cyan:    '#00cc00'
+      white:   '#00cc00'
+
+    # Bright colors
+    bright:
+      black:   '#000000'
+      red:     '#55ff55'
+      green:   '#55ff55'
+      yellow:  '#55ff55'
+      blue:    '#005500'
+      magenta: '#55ff55'
+      cyan:    '#55ff55'
+      white:   '#00cc00'
+
 # Colors
-colors: *dark
+colors: *solarized_dark
   # Default colors
   #primary:
   #  background: '0x000000'
@@ -332,7 +361,7 @@ colors: *dark
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-#background_opacity: 1.0
+background_opacity: 0.8
 
 #selection:
   #semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
