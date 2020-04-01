@@ -2,6 +2,7 @@
 
 if [ $(hostname) == "node01" ]; then
   ckb-next -b&
+  nvidia-settings -a "[gpu:0]/GPUFanControlState=1" -a "[fan:0]/GPUTargetFanSpeed=100"&
 fi
 
 #if [ $(hostname) == "node02" ]; then

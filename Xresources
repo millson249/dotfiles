@@ -1,5 +1,25 @@
 ! Color Definitions
 
+! Borg Palette
+#define B_bg                    #000000
+#define B_fg                    #009400
+#define B_black0                #303030
+#define B_black1                #484848
+#define B_red0                  #e10000
+#define B_red1                  #ff0000
+#define B_green0                #00b400
+#define B_green1                #00da00
+#define B_yellow0               #e16600
+#define B_yellow1               #ff7400
+#define B_blue0                 #0c3696
+#define B_blue1                 #0c43c3
+#define B_magenta0              #b40066
+#define B_magenta1              #db007c
+#define B_cyan0                 #008787
+#define B_cyan1                 #00b6b6
+#define B_white0                #c0c0c0
+#define B_white1                #f0f0f0
+
 ! Solarized Palette
 #define S_base03                #002b36
 #define S_base02                #073642
@@ -21,68 +41,64 @@
 
 ! Color Settings
 ! Black dark/light
-*color0:                        S_base02
-*color8:                        S_base03
+*color0:                        B_black0
+*color8:                        B_black1
 ! Red dark/light
-*color1:                        S_red
-*color9:                        S_orange
+*color1:                        B_red0
+*color9:                        B_red1
 ! Green dark/light
-*color2:                        S_green
-*color10:                       S_base01
+*color2:                        B_green0
+*color10:                       B_green1
 ! Yellow dark/light
-*color3:                        S_yellow
-*color11:                       S_base00
+*color3:                        B_yellow0
+*color11:                       B_yellow1
 ! Blue dark/light
-*color4:                        S_blue
-*color12:                       S_base0
+*color4:                        B_blue0
+*color12:                       B_blue1
 ! Magenta dark/light
-*color5:                        S_magenta
-*color13:                       S_violet
+*color5:                        B_magenta0
+*color13:                       B_magenta1
 ! Cyan dark/light
-*color6:                        S_cyan
-*color14:                       S_base1
+*color6:                        B_cyan0
+*color14:                       B_cyan1
 ! White dark/light
-*color7:                        S_base2
-*color15:                       S_base3
+*color7:                        B_white0
+*color15:                       B_white1
+
+!! Color Settings
+!! Black dark/light
+!*color0:                        S_base02
+!*color8:                        S_base03
+!! Red dark/light
+!*color1:                        S_red
+!*color9:                        S_orange
+!! Green dark/light
+!*color2:                        S_green
+!*color10:                       S_base01
+!! Yellow dark/light
+!*color3:                        S_yellow
+!*color11:                       S_base00
+!! Blue dark/light
+!*color4:                        S_blue
+!*color12:                       S_base0
+!! Magenta dark/light
+!*color5:                        S_magenta
+!*color13:                       S_violet
+!! Cyan dark/light
+!*color6:                        S_cyan
+!*color14:                       S_base1
+!! White dark/light
+!*color7:                        S_base2
+!*color15:                       S_base3
 
 URxvt*depth:                    32
-URxvt*background:               [95]S_base03
-URxvt*foreground:               S_base0
-URxvt*fadeColor:                S_base03
-URxvt*cursorColor:              S_base1
-URxvt*pointerColorBackground:   S_base01
-URxvt*pointerColorForeground:   S_base1
-URxvt*intensityStyles:          false
-
-!!Custom Color Settings
-!!special
-!*.foreground:   #84C138
-!*.background:   #121212
-!*.cursorColor:  #84C138
-!!black
-!*.color0:       #000000
-!*.color8:       #626262
-!!red
-!*.color1:       #B6214A
-!*.color9:       #E50000
-!!green
-!*.color2:       #00AF00
-!*.color10:      #00FF00
-!!yellow
-!*.color3:       #BFBF00
-!*.color11:      #E5E500
-!!blue
-!*.color4:       #246EB2
-!*.color12:      #005FFF
-!!magenta
-!*.color5:       #B200B2
-!*.color13:      #E500E5
-!!cyan
-!*.color6:       #00A6B2
-!*.color14:      #00E5E5
-!!white
-!*.color7:       #B2B2B2
-!*.color15:      #E4E4E4
+URxvt*background:               [80]B_bg
+URxvt*foreground:               B_fg
+!URxvt*fadeColor:                S_base03
+!URxvt*cursorColor:              S_base1
+!URxvt*pointerColorBackground:   S_base01
+!URxvt*pointerColorForeground:   S_base1
+!URxvt*intensityStyles:          false
 
 Xft.antialias:                  true
 Xft.rgba:                       rgb
