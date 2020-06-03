@@ -2,19 +2,9 @@
 	path = oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
 	branch = master
-[submodule "vim"]
-	path = vim
-	url = https://github.com/carlhuda/janus.git
-	branch = master
-[submodule "janus/rust-lang"]
-	path = janus/rust-lang
-	url = https://github.com/rust-lang/rust.vim.git
-[submodule "janus/verilog_systemverilog.vim"]
-	path = janus/verilog_systemverilog.vim
-	url = https://github.com/vhda/verilog_systemverilog.vim.git
 [submodule "omz/themes/spaceship-prompt"]
 	path = omz/themes/spaceship-prompt
 	url = https://github.com/denysdovhan/spaceship-prompt.git
-[submodule "janus/onedark.vim"]
-	path = janus/onedark.vim
-	url = https://github.com/joshdick/onedark.vim.git
+[submodule "vim-plug"]
+	path = vim-plug
+	url = https://github.com/junegunn/vim-plug.git
