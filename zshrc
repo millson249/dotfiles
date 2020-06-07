@@ -80,6 +80,7 @@ plugins=(
   git
   rsync
   ssh-agent
+    fzf
 )
 
 #zstyle :omz:plugins:ssh-agent identities id_rsa id_ecdsa
