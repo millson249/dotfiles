@@ -15,10 +15,6 @@ syntax enable
 "set autoread
 "au FocusGained,BufEnter * checktime
 
-" :W sudo saves the file
-" " (useful for handling the permission-denied error)
-command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
-
 " Search settings
 set ignorecase
 set smartcase
@@ -59,6 +55,7 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'tpope/vim-eunuch'
 
 " End plug.vim
 call plug#end()
