@@ -15,6 +15,10 @@ syntax enable
 "set autoread
 "au FocusGained,BufEnter * checktime
 
+" :W sudo saves the file
+" " (useful for handling the permission-denied error)
+command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
+
 " Search settings
 set ignorecase
 set smartcase
