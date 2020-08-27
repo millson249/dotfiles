@@ -1,6 +1,24 @@
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 
+" Begin plug.vim
+" Specify a directory for plugins
+" - Avoid using standard Vim directory names like 'plugin'
+" - Make sure you use single quotes
+call plug#begin('~/.vim/plugged')
+
+Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdcommenter'
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'tpope/vim-eunuch'
+Plug 'ntpeters/vim-better-whitespace'
+Plug 'pearofducks/ansible-vim'
+
+" End plug.vim
+call plug#end()
+
 set background=dark
 "set termguicolors
 
@@ -11,6 +29,9 @@ set history=500
 filetype plugin on
 filetype indent on
 syntax enable
+
+let g:better_whitespace_enabled=1
+let g:strip_whitespace_on_save=1
 
 "set autoread
 "au FocusGained,BufEnter * checktime
@@ -43,19 +64,3 @@ set nowrap
 set laststatus=2
 
 set tags=tags,./tags;$HOME
-
-" Begin plug.vim
-" Specify a directory for plugins
-" - Avoid using standard Vim directory names like 'plugin'
-" - Make sure you use single quotes
-call plug#begin('~/.vim/plugged')
-
-Plug 'scrooloose/nerdtree'
-Plug 'scrooloose/nerdcommenter'
-Plug 'junegunn/fzf'
-Plug 'junegunn/fzf.vim'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'tpope/vim-eunuch'
-
-" End plug.vim
-call plug#end()
