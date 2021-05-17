@@ -222,4 +222,3 @@ bar {
 # Custom application configurations
 for_window [class="smplayer"] floating enable
 for_window [class="Mumble"] floating enable
-for_window [title="Origin"] floating enable
